@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Hind+Siliguri&family=League+Spartan:wght@400;700&family=Poppins:ital,wght@0,200;0,300;1,200&display=swap');
+
+body{
+    margin:0;
+    min-height: 100vh;
+    background: #e9ced3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 12px;
+}
+.player-container{
+    height:500px;
+    width: 400px;
+    background: #e5dede;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+.img-container{
+    height: 300px;
+    width:300px;
+    position: relative;
+    top:-50px;
+    left:50px;
+}
+.img-container img{
+    width: 100%;
+    height:100%;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.info{
+    text-align: center;
+}
+@media screen and (max-width:415px){
+    .player-container{
+        width:95vw;
+    }
+    .img-container{
+        left: 26px;
+    }
+}
+
+/* progress */
+
+.progress-container{
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px 20px;
+    height: 4px;
+    width:90%;
+
+}
+.progress{
+    background: black;
+    border-radius: 5px;
+    height:100%;
+    width:0%;
+    transition: width 0.1s linear;
+}
+.duration-wrapper{
+    position: relative;
+    top:-25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Controls */
+.player-controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.fas{
+    position: relative;
+    cursor: pointer;
+    top:-17px;
+    margin:0 10px;
+    font-size: 25px;
+    user-select: none;
+    color: #837b7b;
+}
+.fas:hover{
+    color: black;
+}
+.main-button{
+    font-size: 36px;
+}

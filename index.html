@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-player Chintu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="img-container">
+            <img src="img-1.JPG" alt="This is an img">
+        </div>
+        <div class="info">
+            <div id="title">
+                <h2>Yadav Brand 2.0</h2>
+            </div>
+            <div id="artist">
+                <h3>Elivish Yadav</h3>
+            </div>
+            <div class="audio">
+                <audio src="Yadav-Brand-2_320(PaglaSongs).mp3"></audio>
+            </div>
+            <!-- progress -->
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+                    <div class="duration-wrapper">
+                        <span id="current-time">0:00</span>
+                        <span id="duration">2:54</span>
+                </div>
+            </div>
+            <!-- controls -->
+            <div class="player-controls">
+                <i class="fas fa-backward" id="prev" title="Previous"></i>
+                <i class="fas fa-play main-button" id="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="next"></i>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
