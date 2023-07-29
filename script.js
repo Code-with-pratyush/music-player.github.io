@@ -76,9 +76,11 @@ playBtn.addEventListener('click',()=> (isPlaying?songPause():songPlay()));
 
 function loadSong(song){
     title.textContent = song.displayName;
+    title.style.fontSize = 'x-large';
     artist.textContent =  song.artist;
+    artist.style.fontSize = 'x-large';
     music.src= `${song.name}`;
-    image.src = `${song.img}.jpg`;
+    image.src = `${song.img}.JPG`;
 }
 
 //current song
