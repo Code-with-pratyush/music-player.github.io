@@ -1,4 +1,5 @@
 const image = document.querySelector('img');
+const body  = document.querySelector('body');
 const title = document.getElementById('title');
 const artist = document.getElementById('artist');
 const music = document.querySelector('audio');
